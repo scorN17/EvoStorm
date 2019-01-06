@@ -1,16 +1,31 @@
 {
 	"name": "scorn17/evostorm",
+	"description": "Generate ER diagrams from your Laravel models.",
 	"version": "1.0",
+	"homepage": "https://github.com/scorN17/EvoStorm/",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "scorN",
+			"email": "scorn17@gmail.com",
+		}
+	],
 	"require": {
 		"php": ">=5.6.0"
 	},
-	"dist": {
-		"type": "zip",
-		"url": "https://github.com/scorN17/EvoStorm/archive/v1.0.zip"
-	},
 	"autoload": {
-		"psr-0": {
-			"EvoStorm\\Storm\\": "lib/EvoStorm"
+		"psr-4": {
+			"EvoStorm\\Storm\\": "src"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"EvoStorm\\Storm\\EvoStormServiceProvider"
+			],
+			"aliases": {
+				"EvoStorm": "EvoStorm\\Storm\\EvoStormFacade"
+			}
 		}
 	}
 }
