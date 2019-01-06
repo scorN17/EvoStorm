@@ -1,0 +1,16 @@
+{
+	"name": "scorn17/evostorm",
+	"version": "1.0",
+	"require": {
+		"php": ">=5.6.0"
+	},
+	"dist": {
+		"type": "zip",
+		"url": "https://github.com/scorN17/EvoStorm/archive/v1.0.zip"
+	},
+	"autoload": {
+		"psr-0": {
+			"EvoStorm\\Storm\\": "lib/EvoStorm"
+		}
+	}
+}
