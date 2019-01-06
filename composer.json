@@ -1,5 +1,5 @@
 {
-	"name": "evostorm/storm",
+	"name": "evostorm/evostorm",
 	"description": "Catalog, Shop for EvolutionCMS",
 	"version": "1.0",
 	"homepage": "https://github.com/scorN17/EvoStorm/",
@@ -15,8 +15,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"EvoStorm\\Storm\\": "src/"
+			"EvoStorm\\EvoStorm\\": "src/"
 		}
-	},
-	"minimum-stability": "dev"
+	}
 }
