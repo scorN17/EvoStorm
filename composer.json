@@ -15,17 +15,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"EvoStorm\\Storm\\": "src"
+			"EvoStorm\\Storm\\": "src/"
 		}
 	},
 	"extra": {
-		"laravel": {
-			"providers": [
-				"EvoStorm\\Storm\\EvoStormServiceProvider"
-			],
-			"aliases": {
-				"EvoStorm": "EvoStorm\\Storm\\EvoStormFacade"
-			}
+		"branch-alias": {
+			"dev-master": "1.0-dev"
 		}
 	}
 }
