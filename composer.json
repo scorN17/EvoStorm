@@ -1,6 +1,6 @@
 {
-	"name": "scorn17/evostorm",
-	"description": "Generate ER diagrams from your Laravel models.",
+	"name": "evostorm/storm",
+	"description": "",
 	"version": "1.0",
 	"homepage": "https://github.com/scorN17/EvoStorm/",
 	"license": "MIT",
