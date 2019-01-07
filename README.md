@@ -53,3 +53,17 @@
 - Используйте Unix переносы строк
 - Используйте табы размером в 4 пробела
 - Придерживайтесь одного стиля для написания всего кода
+
+INSTALL:
+
+/core/composer.json
+"require-dev": {
+	"evostorm/evostorm": "dev-master"
+},
+
+/core/includes/legacy.inc.php
+// class DocumentParser extends EvolutionCMS\Core{}
+class DocumentParser extends \EvoStorm\EvoStorm\CoreParasite{}
+
+/core/custom/config/app/providers/EvoStormServiceProvider.php
+return \EvoStorm\EvoStorm\EvoStormServiceProvider::class;

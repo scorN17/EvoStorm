@@ -3,16 +3,10 @@ namespace EvoStorm\EvoStorm;
 
 class StormConfig
 {
-	protected $modx;
-	protected $db;
-
 	private $config;
 
-	public function __construct($modx)
+	public function __construct()
 	{
-		$this->modx = &$modx;
-		$this->db   = &$modx->db;
-		
 		$this->config = array(
 			'images_formats' => '/.jpg/.jpeg/.png/.svg/',
 
@@ -72,7 +66,6 @@ class StormConfig
 			'category_image_height' => 200,
 		);
 	}
-
 
 	public function get($prm)
 	{

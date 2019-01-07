@@ -1,7 +1,7 @@
 {
 	"name": "evostorm/evostorm",
 	"description": "Catalog, Shop for EvolutionCMS",
-	"version": "1.0",
+	"version": "1.0.0",
 	"homepage": "https://github.com/scorN17/EvoStorm/",
 	"license": "MIT",
 	"authors": [
