@@ -1,0 +1,50 @@
+<div class="myformbox">
+<div class="myform columns">
+	<form action="" method="post">
+		
+		<div class="frm_row">
+			<div class="frm_lab">Выводить подкатегории</div>
+			<div class="frm_inp">
+				<div style="border-bottom:1px dashed #ccc;padding-bottom:7px;"><input id="frm_subcats_p" type="checkbox" name="subcats_p" value="p" [+subcats_p+] /> <label for="frm_subcats_p">Наследовать</label></div>
+
+				<div><input id="frm_subcats" type="checkbox" name="subcats" value="y" [+subcats_y+] /> <label for="frm_subcats">Да</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab">Выводить товары</div>
+			<div class="frm_inp">
+				<div style="border-bottom:1px dashed #ccc;padding-bottom:7px;"><input id="frm_products_p" type="checkbox" name="products_p" value="p" [+products_p+] /> <label for="frm_products_p">Наследовать</label></div>
+
+				<div><input id="frm_products_n" type="radio" name="products" value="n" [+products_n+] /> <label for="frm_products_n">Нет</label></div>
+				<div><input id="frm_products_last" type="radio" name="products" value="last" [+products_last+] /> <label for="frm_products_last">Если нет подкатегорий</label></div>
+				<div><input id="frm_products_lvl1" type="radio" name="products" value="lvl1" [+products_lvl1+] /> <label for="frm_products_lvl1">Товары 1-го уровня</label></div>
+				<div><input id="frm_products_all" type="radio" name="products" value="all" [+products_all+] /> <label for="frm_products_all">Все товары</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab">Товары в виде предложений</div>
+			<div class="frm_inp">
+				<div style="border-bottom:1px dashed #ccc;padding-bottom:7px;"><input id="frm_producttype_p" type="checkbox" name="producttype_p" value="p" [+producttype_p+] /> <label for="frm_producttype_p">Наследовать</label></div>
+
+				<div><input id="frm_producttype" type="checkbox" name="producttype" value="y" [+producttype_y+] /> <label for="frm_producttype">Да</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row frm_row_errors"></div>
+	
+		<div class="frm_row frm_ok">
+			<p>Изменения сохранены!</p>
+		</div>
+		
+		<div class="frm_row frm_row_sm">
+			<input type="hidden" name="doc" value="[+doc+]" />
+			<input type="hidden" name="form_action" value="category_edit_save" />
+			<div class="frm_inp"><button type="submit">Сохранить</button></div>
+		</div>
+		
+	</form>
+
+</div>
+</div>

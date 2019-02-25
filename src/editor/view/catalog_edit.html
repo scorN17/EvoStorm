@@ -1,0 +1,55 @@
+
+<div class="myformbox">
+<div class="myform columns">
+	
+	<div class="frm_row frm_ok frm_ok2">
+		<p>Товар добавлен!</p>
+	</div>
+		
+	<form action="" method="post">
+		
+		<div class="frm_row">
+			<div class="frm_inp">
+				<div><input id="frm_enabled_y" type="radio" name="enabled" value="y" [+enabled_y+] /> <label for="frm_enabled_y">Включен</label></div>
+				<div><input id="frm_enabled_n" type="radio" name="enabled" value="n" [+enabled_n+] /> <label for="frm_enabled_n">Выключен</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab"><label for="frm_name">Имя</label></div>
+			<div class="frm_inp"><input id="frm_name" type="text" name="name" value="[+name+]" /></div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab"><label for="frm_alias">Псевдоним</label></div>
+			<div class="frm_inp"><input id="frm_alias" type="text" name="alias" value="[+alias+]" /></div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab"><label for="frm_price">Базовая цена</label></div>
+			<div class="frm_inp"><input id="frm_price" type="text" name="price" value="[+price+]" /></div>
+		</div>
+		
+		<div class="frm_row frm_row_2">
+			<div class="frm_lab"><label for="frm_content">Описание</label></div>
+			<div class="frm_inp"><textarea id="frm_content" class="textareaautosize" name="content">[+content+]
+</textarea></div>
+		</div>
+		
+		<div class="frm_row frm_row_errors"></div>
+	
+		<div class="frm_row frm_ok frm_ok1">
+			<p>Изменения сохранены!</p>
+		</div>
+		
+		<div class="frm_row frm_row_sm">
+			<input type="hidden" name="doc" value="[+doc+]" />
+			<input type="hidden" name="id" value="[+id+]" />
+			<input type="hidden" name="form_action" value="[+form_action+]" />
+			<div class="frm_inp"><button type="submit">Сохранить</button></div>
+		</div>
+		
+	</form>
+
+</div>
+</div>

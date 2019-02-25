@@ -1,0 +1,25 @@
+/**
+ * StormCatalogTab
+ *
+ * Вкладка товаров
+ *
+ * @category    plugin
+ * @version     1.0
+ * @date        23.02.2019
+ * @internal    @events OnDocFormRender
+ * @internal    @properties &templates=Шаблоны;text;3;3;Через запятую;
+ *
+ */
+if (IN_MANAGER_MODE != 'true') die();
+$e = &$modx->event;
+if ($e->name == 'OnDocFormRender') {
+	include_once(MODX_BASE_PATH.'core/vendor/evostorm/evostorm/src/plugins/catalogTab/plugin.class.php');
+	global $modx_lang_attribute;
+	$plugin = new stormCatalogTabPlugin($modx, $modx_lang_attribute);
+	if ($id) {
+		$output = $plugin->render();
+	} else {
+		$output = $plugin->renderEmpty();
+	}
+	if ($output) $e->output($output);
+}

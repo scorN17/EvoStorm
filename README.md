@@ -56,6 +56,9 @@
 
 INSTALL:
 
+console:
+/core>composer require phpoffice/phpexcel --dev
+
 /core/composer.json
 "require-dev": {
 	"evostorm/evostorm": "dev-master"

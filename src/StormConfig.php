@@ -12,7 +12,7 @@ class StormConfig
 
 			'privacy_policy' => 17,
 
-			'shop_email_manager'       => 'youbrows@gmail.com',
+			'shop_email_manager'       => 'scorn17@gmail.com',
 			'shop_page_cart'           => 24,
 			'shop_page_checkout_order' => 25,
 

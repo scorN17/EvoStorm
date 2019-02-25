@@ -1,0 +1,112 @@
+
+<div class="myformbox">
+<div class="myform columns">
+	
+	<div class="frm_row frm_ok frm_ok2">
+		<p>Параметр добавлен!</p>
+	</div>
+		
+	<form action="" method="post">
+		
+		<div class="frm_row">
+			<div class="frm_inp">
+				<div><input id="frm_enabled_y" type="radio" name="enabled" value="y" [+enabled_y+] /> <label for="frm_enabled_y">Включен</label></div>
+				<div><input id="frm_enabled_n" type="radio" name="enabled" value="n" [+enabled_n+] /> <label for="frm_enabled_n">Выключен</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab"><label for="frm_name">Имя</label></div>
+			<div class="frm_inp"><input id="frm_name" type="text" name="name" value="[+name+]" /></div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab"><label for="frm_alias">Псевдоним</label></div>
+			<div class="frm_inp"><input id="frm_alias" type="text" name="alias" value="[+alias+]" /></div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab">На основе этого параметра формировать товар</div>
+			<div class="frm_inp">
+				<div><input id="frm_form_product_n" type="radio" name="form_product" value="n" [+form_product_n+] /> <label for="frm_form_product_n">Нет</label></div>
+				<div><input id="frm_form_product_y" type="radio" name="form_product" value="y" [+form_product_y+] /> <label for="frm_form_product_y">Да</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_inp">
+				<div><input id="frm_multi_n" type="radio" name="multi" value="n" [+multi_n+] /> <label for="frm_multi_n">Одно значение</label></div>
+				<div><input id="frm_multi_y" type="radio" name="multi" value="y" [+multi_y+] /> <label for="frm_multi_y">Несколько значений</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab">Тип значения</div>
+			<div class="frm_inp">
+				<div><input id="frm_type_str" type="radio" name="type" value="str" [+type_str+] /> <label for="frm_type_str">Строка</label></div>
+				<div><input id="frm_type_int" type="radio" name="type" value="int" [+type_int+] /> <label for="frm_type_int">Число</label></div>
+				<div><input id="frm_type_boo" type="radio" name="type" value="boo" [+type_boo+] /> <label for="frm_type_boo">Да/Нет</label></div>
+				<div><input id="frm_type_prm" type="radio" name="type" value="prm" [+type_prm+] /> <label for="frm_type_prm">Параметр</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_inp">
+				<div><input id="frm_unite_n" type="radio" name="unite" value="n" [+unite_n+] /> <label for="frm_unite_n">Не объединять в карточке</label></div>
+				<div><input id="frm_unite_y" type="radio" name="unite" value="y" [+unite_y+] /> <label for="frm_unite_y">Объединять</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab">Использовать</div>
+			<div class="frm_inp">
+				<div><input id="frm_usein_1" type="checkbox" name="usein_1" value="y" [+usein_1+] /> <label for="frm_usein_1">В карточке</label></div>
+				<div><input id="frm_usein_2" type="checkbox" name="usein_2" value="y" [+usein_2+] /> <label for="frm_usein_2">В фильтре</label></div>
+				<div><input id="frm_usein_4" type="checkbox" name="usein_4" value="y" [+usein_4+] /> <label for="frm_usein_4">В корзине</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab">Способ выбора в фильтре</div>
+			<div class="frm_inp">
+				<div><input id="frm_filter_multi" type="radio" name="filter" value="multi" [+filter_multi+] /> <label for="frm_filter_multi">Множественный выбор</label></div>
+				<div><input id="frm_filter_single" type="radio" name="filter" value="single" [+filter_single+] /> <label for="frm_filter_single">Одиночный выбор</label></div>
+				<div><input id="frm_filter_interval" type="radio" name="filter" value="interval" [+filter_interval+] /> <label for="frm_filter_interval">Интервал</label></div>
+				<div><input id="frm_filter_color" type="radio" name="filter" value="color" [+filter_color+] /> <label for="frm_filter_color">Цвет</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab">Обязательно заполнение для корзины</div>
+			<div class="frm_inp">
+				<div><input id="frm_required_n" type="radio" name="required" value="n" [+required_n+] /> <label for="frm_required_n">Нет</label></div>
+				<div><input id="frm_required_y" type="radio" name="required" value="y" [+required_y+] /> <label for="frm_required_y">Да</label></div>
+			</div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab"><label for="frm_prms">Дополнительные значения</label></div>
+			<div class="frm_inp"><input id="frm_prms" type="text" name="prms" value="[+prms+]" /></div>
+		</div>
+		
+		<div class="frm_row">
+			<div class="frm_lab"><label for="frm_ed">Единицы измерения</label></div>
+			<div class="frm_inp"><input id="frm_ed" type="text" name="ed" value="[+ed+]" /></div>
+		</div>
+		
+		<div class="frm_row frm_row_errors"></div>
+	
+		<div class="frm_row frm_ok frm_ok1">
+			<p>Изменения сохранены!</p>
+		</div>
+		
+		<div class="frm_row frm_row_sm">
+			<input type="hidden" name="id" value="[+id+]" />
+			<input type="hidden" name="form_action" value="parameter_save" />
+			<div class="frm_inp"><button type="submit">Сохранить</button></div>
+		</div>
+		
+	</form>
+
+</div>
+</div>
